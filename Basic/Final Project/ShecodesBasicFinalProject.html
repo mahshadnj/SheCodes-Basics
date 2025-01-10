@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Romance Kdrama</title>
+    <style>
+      body {
+        background-color: #defcf9;
+        color: white;
+      }
+
+      .container {
+        background: linear-gradient(
+          109.6deg,
+          rgb(151, 213, 255) 11.2%,
+          rgb(255, 155, 185) 91.1%
+        );
+        max-width: 600px;
+        margin: 30px auto;
+        padding: 20px 50px;
+        border: 1px solid white;
+        border-radius: 10px;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 24px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 33px;
+        font-family: "Lucida Handwriting", sans-serif;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+        border-radius: 10px;
+      }
+
+      p {
+        text-align: justify;
+        font-family: "Trebuchet MS", sans-serif;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #cca8e9;
+        color: white;
+        font-size: 16px;
+        padding: 15px 24px;
+        border: 1px solid white;
+        border-radius: 25px;
+        transition: all 200ms ease-in-out;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      button:hover {
+        background: #cadefc;
+        color: #ae7ed6;
+        cursor: pointer;
+        border: 1px solid #ae7ed6;
+      }
+
+      .links {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        line-height: normal;
+      }
+
+      .link1 {
+        text-decoration: none;
+        color: #547fbc;
+      }
+
+      .link1:hover {
+        text-decoration: underline;
+      }
+
+      .link2 {
+        text-decoration: none;
+        color: #547fbc;
+      }
+
+      .link2:hover {
+        text-decoration: underline;
+      }
+
+      strong {
+        color: #547fbc;
+      }
+
+      .footer {
+        text-align: center;
+      }
+
+      .link3 {
+        font-weight: bold;
+        text-decoration: none;
+        color: #547fbc;
+      }
+
+      .link3:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Romance Kdrama 2022</h1>
+      <h2>Twenty Five Twenty One</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/940/original/Twenty-Five_Twenty-One-p2.jpg?1661780199"
+        alt="Twenty Five Twenty One"
+      />
+      <p>
+        Twenty-Five Twenty-One (Korean: 스물다섯 스물하나) is a 2022 South
+        Korean television series directed by Jung Ji-hyun and starring Kim
+        Tae-ri, Nam Joo-hyuk, Bona, Choi Hyun-wook and Lee Joo-myung. The series
+        depicts the romantic lives of five characters spanning from the year of
+        1998 to 2021. "Twenty-Five, Twenty-One" tells a love story between Na
+        Hee-Do (Kim Tae-Ri) and Back Yi-Jin (Nam Joo-Hyuk). Na Hee-Do is a
+        member of her high school fencing team. Due to the South Korean
+        financial crisis, the high school fencing team gets disbanded. Getting
+        through all the difficulties, she becomes a member of the sabre fencing
+        national team. The South Korean financial crisis also causes Back
+        Yi-Jin’s father's business to go bankrupt. This leads to a life change
+        for Back Yi-Jin, from living the life of a wealthy person to a poor
+        person. While studying, he works part-time jobs like delivery
+        newspapers. Later, he becomes a sports reporter for a broadcasting
+        network.
+      </p>
+      <br />
+
+      <button>More Krdamas</button>
+      <br />
+      <hr />
+      <span class="links">
+        <a
+          class="link1"
+          href="https://en.wikipedia.org/wiki/Twenty-Five_Twenty-One"
+          target="_blank"
+        >
+          Learn more on Wikipedia
+        </a>
+        <a
+          class="link2"
+          href="https://www.netflix.com/tr-en/title/81517168?source=35"
+          target="_blank"
+        >
+          Watch on Netflix
+        </a>
+      </span>
+
+      <p class="footer">
+        <em
+          >This page was built by <strong>Mahshad Nazari Jeirani</strong>
+          <br />
+          Check out my
+          <a
+            class="link3"
+            href="https://www.linkedin.com/in/mahshad-nazari-jeirani-aa2615218/"
+            target="_blank"
+            >Linkedin</a
+          >
+        </em>
+      </p>
+    </div>
+    <script>
+      function more() {
+        let name = prompt("What is your name?");
+
+        let email = prompt("What is your email Address?");
+
+        if (name.length > 0 && email.length > 0) {
+          alert(
+            "Thank you " +
+              name +
+              "!💛 We will send you a link for more Kdramas 🎬"
+          );
+        } else {
+          alert("Please Enter your name and email correctly!");
+        }
+      }
+
+      let moreButton = document.querySelector("button");
+      moreButton.addEventListener("click", more);
+    </script>
+  </body>
+</html>
